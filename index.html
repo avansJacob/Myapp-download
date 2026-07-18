@@ -1,25 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Android App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download RouteLocal</title>
+    <style>
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            background-color: #f5f5f5; 
+            text-align: center; 
+            padding: 40px 20px; 
+            box-sizing: border-box;
+        }
+        .card { 
+            background: white; 
+            padding: 40px 30px; 
+            border-radius: 16px; 
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+            max-width: 480px; 
+            width: 100%; 
+            border: 1px solid #eaeaea;
+            box-sizing: border-box;
+        }
+        h1 { 
+            margin-top: 0;
+            font-size: 36px;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .brand-black { color: #000000; }
+        .brand-orange { color: #FF5722; }
+        
+        h2 {
+            color: #222222;
+            font-size: 22px;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+        p { 
+            color: #555555; 
+            line-height: 1.6; 
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        .app-meta {
+            font-size: 14px;
+            color: #888888;
+            margin-top: -16px;
+            margin-bottom: 24px;
+        }
+        /* Match your theme's highlight banner design pattern */
+        .info-box {
+            font-weight: normal;
+            color: #555555;
+            padding: 16px;
+            background-color: #FFF3EE;
+            border-radius: 8px;
+            border-left: 4px solid #FF5722;
+            text-align: left;
+            line-height: 1.5;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        .download-btn {
+            display: block; 
+            padding: 16px 24px; 
+            background-color: #FF5722; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            box-shadow: 0 4px 12px rgba(255, 87, 34, 0.25);
+            transition: all 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #E64A19;
+            box-shadow: 0 6px 16px rgba(255, 87, 34, 0.4);
+            transform: translateY(-1px);
+        }
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+        .links-container {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid #eaeaea;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .footer-link {
+            color: #FF5722;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+        .footer-link:hover {
+            color: #E64A19;
+            text-decoration: underline;
+        }
+        .divider {
+            color: #eaeaea;
+            user-select: none;
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
+<body>
+    <div class="card">
+        <!-- Brand Logo Header -->
+        <h1>
+            <span class="brand-black">Route</span><span class="brand-orange">Local</span>
+        </h1>
+        
+        <h2>Experience the Application</h2>
+        <p>RouteLocal is an intuitive Android experience engineered for smooth local navigation and robust utilities. Try out the latest features directly on your device.</p>
+        
+        <div class="app-meta">File size: ~32 MB • Platform: Android (APK)</div>
+        
+        <!-- Premium Action Download Button -->
+        <a href="app-debug.apk" download class="download-btn">
+            Get the Android App
+        </a>
+        
+        <br>
 
-    <h1>Welcome to My Expense Tracker App</h1>
-    
-    <p>This is a short description of my app. I built this using Kotlin and it features offline caching.</p>
-
-    <!-- Make sure the href exactly matches the name of your APK file -->
-    <a href="app-debug.apk" download style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px;">
-    Download the Android App (APK)
-</a>
-
-    <br><br><br>
-
-    <h3>Important Links</h3>
-    <a href="privacy-policy.html">Privacy Policy</a> | 
-    <a href="account-deletion.html">Account Deletion</a> | 
-    <a href="confirmation.html">Email Confirmation</a>
-
+        <!-- Dynamic Context Alert Box -->
+        <div class="info-box">
+            <strong>Recruiter & Tester Note:</strong> To run this application, download the installer file above onto an Android device or emulator. Ensure that "Install from Unknown Sources" is toggled on in your device system settings to complete setup.
+        </div>
+        
+        <!-- Professionally Maintained App Legal/UX Links -->
+        <div class="links-container">
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <span class="divider">|</span>
+            <a href="account-deletion.html" class="footer-link">Account Deletion</a>
+            <span class="divider">|</span>
+            <a href="confirmation.html" class="footer-link">Test Confirmation Link</a>
+        </div>
+    </div>
 </body>
 </html>
